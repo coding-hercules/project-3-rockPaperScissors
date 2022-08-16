@@ -1,3 +1,19 @@
+function getComputerChoice() {
+    let computerChoice = '';
+    switch (Math.floor(Math.random() * 2)) {
+        case 0:
+            computerChoice = 'rock';
+            break;
+        case 1:
+            computerChoice = 'paper';
+            break;
+        case 2:
+            computerChoice = 'scissors';
+            break;
+    }
+    
+    return computerChoice 
+}
 const playRound = (playerSelection, computerSelection) => {
     
     if (playerSelection === 'rock') {
