@@ -70,4 +70,14 @@ function game() {
         if (playRound(playerSelection) === 'You Win!') playerScore++
         
     }
+
+    if (playerScore > computerScore) {
+        return 'You Win'
+    } else if (playerScore < computerScore) {
+        return 'You Lose'
+    } else {
+        return 'Its a Draw'
+    }
+
 }
+
