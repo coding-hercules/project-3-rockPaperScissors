@@ -57,7 +57,7 @@ const playRound = (playerSelection) => {
     }
 }
 let computerSelection = getComputerChoice();
-let playerSelection = prompt('Rock, Paper, Scissors!', 'Rock').toLowerCase();
+//let playerSelection = prompt('Rock, Paper, Scissors!', 'Rock').toLowerCase();
 //console.log(playRound(playerSelection));
 
 function game() {
