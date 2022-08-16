@@ -60,4 +60,9 @@ let computerSelection = getComputerChoice();
 // let playerSelection = prompt('Rock, Paper, Scissors!', 'Rock').toLowerCase();
 //console.log(playRound(playerSelection));
 
-
+function game() {
+    for (let i = 1; i < 6; i++) {
+        playerSelection = prompt(`Game ${i} of Rock, Paper, Scissors!`, 'Rock').toLowerCase()
+        
+    }
+}
