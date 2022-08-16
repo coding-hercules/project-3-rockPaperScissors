@@ -18,37 +18,37 @@ const playRound = (playerSelection, computerSelection) => {
     
     if (playerSelection === 'rock') {
         switch (computerSelection) {
-            case 'rock':
+            case 'Rock':
                 return 'Draw!';
                 break;
-            case 'paper':
+            case 'Paper':
                 return 'You Lose!';
                 break;
-            case 'scissors':
+            case 'Scissors':
                 return 'You Win!';
                 break;
         }
     } else if (playerSelection === 'paper') {
         switch (computerSelection) {
-            case 'rock':
+            case 'Rock':
                 return 'You Win!';
                 break;
-            case 'paper':
+            case 'Paper':
                 return 'Draw!';
                 break;
-            case 'scissors':
+            case 'Scissors':
                 return 'You Lose!';
                 break;
         }
     } else if (playerSelection === 'scissors') {
         switch (computerSelection) {
-            case 'rock':
+            case 'Rock':
                 return 'You Lose!';
                 break;
-            case 'paper':
+            case 'Paper':
                 return 'You Win!';
                 break;
-            case 'scissors':
+            case 'Scissors':
                 return 'Draw!';
                 break;
         }
