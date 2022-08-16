@@ -19,37 +19,37 @@ const playRound = (playerSelection) => {
     if (playerSelection === 'rock') {
         switch (computerSelection) {
             case 'Rock':
-                return 'Draw!';
+                return 0;
                 break;
             case 'Paper':
-                return 'You Lose!';
+                return -1;
                 break;
             case 'Scissors':
-                return 'You Win!';
+                return 1;
                 break;
         }
     } else if (playerSelection === 'paper') {
         switch (computerSelection) {
             case 'Rock':
-                return 'You Win!';
+                return 1;
                 break;
             case 'Paper':
-                return 'Draw!';
+                return 0;
                 break;
             case 'Scissors':
-                return 'You Lose!';
+                return -1;
                 break;
         }
     } else if (playerSelection === 'scissors') {
         switch (computerSelection) {
             case 'Rock':
-                return 'You Lose!';
+                return -1;
                 break;
             case 'Paper':
-                return 'You Win!';
+                return 1;
                 break;
             case 'Scissors':
-                return 'Draw!';
+                return 0;
                 break;
         }
     } else {
@@ -66,8 +66,8 @@ function game() {
     for (let i = 1; i < 6; i++) {
         playerSelection = prompt(`Game ${i} of Rock, Paper, Scissors!`, getComputerChoice()).toLowerCase() // function in default prompt value allows players to let computer choose for them.
         
-        if (playRound(playerSelection) === 'You Lose!') computerScore++
-        if (playRound(playerSelection) === 'You Win!') playerScore++
+        if (playRound(playerSelection) === -1) computerScore++
+        if (playRound(playerSelection) === 1) playerScore++
         
     }
 
