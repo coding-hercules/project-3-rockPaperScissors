@@ -1,4 +1,4 @@
-const getComputerChoice = (playerSelection, computerSelection) => {
+const playRound = (playerSelection, computerSelection) => {
     
     if (playerSelection === 'rock') {
         switch (computerSelection) {
