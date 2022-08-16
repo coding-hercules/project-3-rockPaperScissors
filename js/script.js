@@ -64,7 +64,7 @@ function game() {
     let playerScore = 0;
     let computerScore = 0;
     for (let i = 1; i < 6; i++) {
-        playerSelection = prompt(`Game ${i} of Rock, Paper, Scissors!`, getComputerChoice()).toLowerCase()
+        playerSelection = prompt(`Game ${i} of Rock, Paper, Scissors!`, getComputerChoice()).toLowerCase() // function in default prompt value allows players to let computer choose for them.
         
         if (playRound(playerSelection) === 'You Lose!') computerScore++
         if (playRound(playerSelection) === 'You Win!') playerScore++
