@@ -56,3 +56,5 @@ const playRound = (playerSelection, computerSelection) => {
         return 'Please choose "Rock", "Paper", or "Scissors"'
     }
 }
+
+let playerSelection = prompt('Rock, Paper, Scissors!', 'Rock');
