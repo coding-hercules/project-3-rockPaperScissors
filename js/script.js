@@ -2,13 +2,13 @@ function getComputerChoice() {
     let computerChoice = '';
     switch (Math.floor(Math.random() * 2)) {
         case 0:
-            computerChoice = 'rock';
+            computerChoice = 'Rock';
             break;
         case 1:
-            computerChoice = 'paper';
+            computerChoice = 'Paper';
             break;
         case 2:
-            computerChoice = 'scissors';
+            computerChoice = 'Scissors';
             break;
     }
     
