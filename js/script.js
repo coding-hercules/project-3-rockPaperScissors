@@ -53,6 +53,6 @@ const playRound = (playerSelection, computerSelection) => {
                 break;
         }
     } else {
-
+        return 'Please choose "Rock", "Paper", or "Scissors"'
     }
 }
