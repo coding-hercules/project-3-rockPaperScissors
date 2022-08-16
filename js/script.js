@@ -58,3 +58,4 @@ const playRound = (playerSelection, computerSelection) => {
 }
 
 let playerSelection = prompt('Rock, Paper, Scissors!', 'Rock').toLowerCase();
+console.log(playRound(playerSelection, getComputerChoice()));
