@@ -14,7 +14,7 @@ function getComputerChoice() {
     
     return computerChoice 
 }
-const playRound = (playerSelection, computerSelection) => {
+const playRound = (playerSelection) => {
     
     if (playerSelection === 'rock') {
         switch (computerSelection) {
@@ -56,6 +56,6 @@ const playRound = (playerSelection, computerSelection) => {
         return 'Please choose "Rock", "Paper", or "Scissors"'
     }
 }
-
+let computerSelection = getComputerChoice();
 let playerSelection = prompt('Rock, Paper, Scissors!', 'Rock').toLowerCase();
-console.log(playRound(playerSelection, getComputerChoice()));
+console.log(playRound(playerSelection));
