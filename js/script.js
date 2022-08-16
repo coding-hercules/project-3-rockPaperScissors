@@ -66,5 +66,8 @@ function game() {
     for (let i = 1; i < 6; i++) {
         playerSelection = prompt(`Game ${i} of Rock, Paper, Scissors!`, 'Rock').toLowerCase()
         
+        if (playRound(playerSelection) === 'You Lose!') computerScore++
+        if (playRound(playerSelection) === 'You Win!') playerScore++
+        
     }
 }
